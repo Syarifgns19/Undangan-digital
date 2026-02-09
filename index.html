@@ -6,6 +6,18 @@
   <title>Undangan Digital</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
+    .music-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #d4af37;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -65,7 +77,14 @@
   </style>
 </head>
 <body>
+<audio id="musik" loop>
+  <source src="musik.mp3" type="audio/mpeg">
+</audio>
 
+<button onclick="document.getElementById('musik').play()" class="music-btn">
+  ▶ Musik
+</button>
+  
 <div class="container">
   <header>
     <p>Undangan Pernikahan</p>
